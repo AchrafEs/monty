@@ -8,6 +8,9 @@
  */
 void pstr(void)
 {
+	int stack[STACK_SIZE];
+	int top = -1;
+
 	while (top >= 0 && stack[top] != 0 && stack[top] >= 0 && stack[top] <= 127)
 	{
 		printf("%c", (char)stack[top]);

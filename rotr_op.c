@@ -7,6 +7,8 @@
  */
 void rotr(void)
 {
+	int stack[STACK_SIZE];
+	int top = -1;
 	int temp, i;
 
 	if (top >= 1)

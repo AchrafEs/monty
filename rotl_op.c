@@ -7,6 +7,8 @@
  */
 void rotl(void)
 {
+	int stack[STACK_SIZE];
+	int top = -1;
 	int i, temp;
 
 	if (top >= 1)

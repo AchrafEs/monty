@@ -8,6 +8,8 @@
  */
 void pall(void)
 {
+	int stack[STACK_SIZE];
+	int top = -1;
 	int i;
 
 	if (top == -1)

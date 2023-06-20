@@ -9,6 +9,8 @@
  */
 void pchar(int line_number)
 {
+	int stack[STACK_SIZE];
+	int top = -1;
 	int value;
 
 	if (top < 0)

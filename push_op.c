@@ -10,6 +10,8 @@
  */
 void push(const char *arg, int line_number)
 {
+	int stack[STACK_SIZE];
+	int top = -1;
 	int value;
 
 	if (!arg || *arg == '\0')

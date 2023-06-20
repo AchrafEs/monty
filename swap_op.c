@@ -9,6 +9,8 @@
  */
 void swap(int line_number)
 {
+	int stack[STACK_SIZE];
+	int top = -1;
 	int temp = stack[top];
 
 

@@ -9,6 +9,9 @@
  */
 void pint(int line_number)
 {
+	int stack[STACK_SIZE];
+	int top = -1;
+
 	if (top == -1)
 	{
 		fprintf(stderr, "L%d: can't pint, stack empty\n", line_number);
