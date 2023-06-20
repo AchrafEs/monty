@@ -7,7 +7,8 @@
 
 #define STACK_SIZE 100
 int stack[STACK_SIZE];
-int top = -1;
+int top;
+int isQueue;
 
 /*____________data structures for this project____________*/
 
