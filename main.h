@@ -50,5 +50,7 @@ void pint(int line_number);
 void swap(int line_number);
 void add(int line_number);
 void nop(void);
+void sub(int line_number);
+void div(int line_number);
 
 #endif
