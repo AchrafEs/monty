@@ -54,5 +54,6 @@ void sub(int line_number);
 void div(int line_number);
 void mul(int line_number);
 void mod(int line_number);
+void pchar(int line_number);
 
 #endif
