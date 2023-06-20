@@ -43,8 +43,9 @@ typedef struct instruction_s
 /*____________Functions Prototypes____________*/
 
 void push(const char *arg, int line_number);
-void pall();
+void pall(void);
 void pop(int line_number);
 void pint(int line_number);
+void swap(int line_number);
 
 #endif
