@@ -6,9 +6,6 @@
 #include <string.h>
 
 #define STACK_SIZE 100
-int stack[STACK_SIZE];
-int top;
-int isQueue;
 
 /*____________data structures for this project____________*/
 
