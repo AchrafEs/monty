@@ -6,7 +6,7 @@
  *
  * Return: Void
  */
-void pall()
+void pall(void)
 {
 	int i;
 
