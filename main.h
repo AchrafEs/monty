@@ -52,5 +52,6 @@ void add(int line_number);
 void nop(void);
 void sub(int line_number);
 void div(int line_number);
+void mul(int line_number);
 
 #endif
