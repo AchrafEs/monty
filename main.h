@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define STACK_SIZE 100
 int stack[STACK_SIZE];
@@ -47,5 +48,6 @@ void pall(void);
 void pop(int line_number);
 void pint(int line_number);
 void swap(int line_number);
+void add(int line_number);
 
 #endif
