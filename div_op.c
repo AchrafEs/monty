@@ -9,6 +9,8 @@
  */
 void div(int line_number)
 {
+	int stack[STACK_SIZE];
+	int top = -1;
 	int divisor;
 
 	if (top < 1)
