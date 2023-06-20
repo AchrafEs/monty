@@ -49,5 +49,6 @@ void pop(int line_number);
 void pint(int line_number);
 void swap(int line_number);
 void add(int line_number);
+void nop(void);
 
 #endif
