@@ -39,6 +39,19 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/*____________Error_handlers____________*/
+int usage_error(void);
+int open_error(char *filename);
+int malloc_error(void);
+int unknown_op_error(char *opcode, unsigned int line_number);
+int no_int_error(unsigned int line_number);
+int pchar_error(unsigned int line_number, char *message);
+int pop_error(unsigned int line_number);
+int print_error(unsigned int line_number);
+int short_stack_error(unsigned int line_number, char *op);
+int div_error(unsigned int line_number);
+
+
 /*____________Functions Prototypes____________*/
 
 void push(const char *arg, int line_number);
