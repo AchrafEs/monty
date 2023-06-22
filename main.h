@@ -51,23 +51,16 @@ int print_error(unsigned int line_number);
 int short_stack_error(unsigned int line_number, char *op);
 int div_error(unsigned int line_number);
 
-
 /*____________Functions Prototypes____________*/
-
-void push(const char *arg, int line_number);
-void pall(void);
-void pop(int line_number);
-void pint(int line_number);
-void swap(int line_number);
-void add(int line_number);
-void nop(void);
-void sub(int line_number);
-void div(int line_number);
-void mul(int line_number);
-void mod(int line_number);
-void pchar(int line_number);
-void pstr(void);
-void rotl(void);
-void rotr(void);
+char *get_int(int num);
+int get_numbase_len(unsigned int num, unsigned int base);
+void fill_numbase_buff(unsigned int num, unsigned int base,
+		                char *buff, int buff_size);
+/*____________Opcodes prototypes____________*/
+void _push(stack_t **stack, unsigned int line_number);
+void _pall(stack_t **stack, unsigned int line_number);
+void _pint(stack_t **stack, unsigned int line_number);
+void _pop(stack_t **stack, unsigned int line_number);
+void _swap(stack_t **stack, unsigned int line_number);
 
 #endif
