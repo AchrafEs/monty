@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 #define STACK_SIZE 100
 
@@ -74,5 +77,17 @@ void _rotl(stack_t **stack, unsigned int line_number);
 void _rotr(stack_t **stack, unsigned int line_number);
 void _stack(stack_t **stack, unsigned int line_number);
 void _queue(stack_t **stack, unsigned int line_number);
+/*____________monty_runner_____________*/
+void free_tokens(void);
+unsigned int token_arr_len(void);
+int is_empty_line(char *line, char *delims);
+void (*get_op_func(char *opcode))(stack_t**, unsigned int);
+int run_monty(FILE *script_fd);
+/*____________set_up_tokens____________*/
+void set_op_tok_error(int error_code);
+/*____________satck_prototypes____________*/
+void free_stack(stack_t **stack);
+int init_stack(stack_t **stack);
+int check_mode(stack_t *stack);
 
 #endif
